@@ -83,7 +83,7 @@ function Contact() {
               careerassist.in@gmail.com
             </h3>
             <p className="max-w-[500px] text-sm md:text-base">
-              Have questions? Reach out to us directly or use the form below.
+              Have questions? Reach out to us directly.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4">
               <div className="flex items-center">
