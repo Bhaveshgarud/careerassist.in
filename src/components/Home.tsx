@@ -29,11 +29,6 @@ const features = [
     description:
       "Our team ensures each application is customized to increase your chances.",
   },
-  // {
-  //   title: "Expert Support",
-  //   description:
-  //     "Get assistance from professionals who know what recruiters are looking for.",
-  // },
 ];
 
 // Timeline steps data
@@ -66,7 +61,6 @@ const timelineSteps = [
 
 function Home() {
   const sectionRef = useRef<HTMLElement | null>(null);
-  const timelineRef = useRef<HTMLDivElement | null>(null);
   const [activeStep, setActiveStep] = useState<number | null>(null);
 
   useEffect(() => {
@@ -91,23 +85,6 @@ function Home() {
     return () => {
       if (section) observer.unobserve(section);
     };
-  }, []);
-
-  useEffect(() => {
-    const timeline = timelineRef.current;
-    if (timeline) {
-      const scroll = () => {
-        timeline.scrollLeft += 1;
-        if (
-          timeline.scrollLeft >=
-          timeline.scrollWidth - timeline.clientWidth
-        ) {
-          timeline.scrollLeft = 0;
-        }
-      };
-      const intervalId = setInterval(scroll, 50);
-      return () => clearInterval(intervalId);
-    }
   }, []);
 
   return (
@@ -157,15 +134,6 @@ function Home() {
                   Start Your Journey
                 </Button>
                 </Link>
-                {/* <Link to="Contact">
-                  <Button
-                    variant="outline"
-                    className="flex items-center justify-center"
-                  >
-                    <Clock className="mr-2 h-4 w-4" />
-                    Book a Consultation
-                  </Button>
-                </Link> */}
               </div>
             </div>
             <div className="mt-6 flex flex-wrap justify-center gap-4">
@@ -221,44 +189,35 @@ function Home() {
               <h2 className="text-2xl font-bold mb-6">
                 OnetoMany Service Process
               </h2>
-              <div
-                ref={timelineRef}
-                className="flex overflow-x-scroll pb-10 hide-scrollbar"
-                style={{
-                  scrollBehavior: "smooth",
-                  WebkitOverflowScrolling: "touch",
-                }}
-              >
-                <div className="flex flex-nowrap gap-4">
-                  {timelineSteps.map((step, index) => (
-                    <Card
-                      key={index}
-                      className={`flex-none w-80 transition-all duration-300 ease-in-out transform hover:scale-105 ${
-                        activeStep === index ? "ring-2 ring-primary" : ""
-                      }`}
-                      onClick={() =>
-                        setActiveStep(activeStep === index ? null : index)
-                      }
-                    >
-                      <CardHeader>
-                        <CardTitle className="flex items-center">
-                          <span className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center mr-2">
-                            {index + 1}
-                          </span>
-                          {step.title}
-                        </CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <CardDescription>{step.description}</CardDescription>
-                        {activeStep === index && (
-                          <p className="mt-4 text-sm text-muted-foreground">
-                            {step.details}
-                          </p>
-                        )}
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                {timelineSteps.map((step, index) => (
+                  <Card
+                    key={index}
+                    className={`transition-all duration-300 ease-in-out transform hover:scale-105 ${
+                      activeStep === index ? "ring-2 ring-primary" : ""
+                    }`}
+                    onClick={() =>
+                      setActiveStep(activeStep === index ? null : index)
+                    }
+                  >
+                    <CardHeader>
+                      <CardTitle className="flex items-center">
+                        <span className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center mr-2">
+                          {index + 1}
+                        </span>
+                        {step.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription>{step.description}</CardDescription>
+                      {activeStep === index && (
+                        <p className="mt-4 text-sm text-muted-foreground">
+                          {step.details}
+                        </p>
+                      )}
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
             </div>
           </div>
