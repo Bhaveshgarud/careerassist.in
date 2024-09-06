@@ -1,6 +1,6 @@
 import React from 'react';
 import { useScrollAnimation } from './useScrollAnimation';
-import { CheckCircleIcon, Users, Target, Star } from 'lucide-react';
+import { CheckCircleIcon, Users, Target, Star, Mail } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "src/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "src/components/ui/avatar";
 
@@ -8,6 +8,7 @@ function About() {
   const [headerRef, headerVisible] = useScrollAnimation()
   const [imageRef, imageVisible] = useScrollAnimation()
   const [featuresRef, featuresVisible] = useScrollAnimation()
+  const [servicesRef, servicesVisible] = useScrollAnimation()
   const [missionRef, missionVisible] = useScrollAnimation()
   const [teamRef, teamVisible] = useScrollAnimation()
   const [testimonialsRef, testimonialsVisible] = useScrollAnimation()
@@ -71,6 +72,63 @@ function About() {
         </div>
 
         <div 
+          ref={servicesRef}
+          className={`my-12 transition-opacity duration-1000 ease-in-out ${servicesVisible ? 'opacity-100' : 'opacity-0'}`}
+        >
+          <h3 className="text-2xl font-bold mb-6 text-center">Our Services</h3>
+          <div className="grid gap-6 md:grid-cols-2">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between">
+                  <span>Ultimate</span>
+                  <span className="text-2xl font-bold">₹5k</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  <li className="flex items-center">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mr-2" />
+                    Resume revision
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mr-2" />
+                    LinkedIn revision
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mr-2" />
+                    Interview prep material
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mr-2" />
+                    AutoApply job: 100 Applications
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between">
+                  <span>Starter</span>
+                  <span className="text-2xl font-bold">₹3k</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  <li className="flex items-center">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mr-2" />
+                    Resume revision
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mr-2" />
+                    AutoApply job: 50 Applications
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        <div 
           ref={missionRef}
           className={`my-12 transition-opacity duration-1000 ease-in-out ${missionVisible ? 'opacity-100' : 'opacity-0'}`}
         >
@@ -82,61 +140,28 @@ function About() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p>At CareerAssist, our mission is to revolutionize the job search process for students, recent graduates, and professionals seeking a career change.. We believe that everyone deserves a fair shot at their dream job, and we're here to level the playing field. By handling the time-consuming task of applying to multiple companies, we allow you to focus on what truly matters: preparing for interviews and showcasing your unique talents.</p>
+              <p>At CareerAssist, our mission is to revolutionize the job search process for students, recent graduates, and professionals seeking a career change. We believe that everyone deserves a fair shot at their dream job, and we're here to level the playing field. By handling the time-consuming task of applying to multiple companies, we allow you to focus on what truly matters: preparing for interviews and showcasing your unique talents.</p>
             </CardContent>
           </Card>
         </div>
 
-        {/* <div 
-          ref={teamRef}
-          className={`my-12 transition-opacity duration-1000 ease-in-out ${teamVisible ? 'opacity-100' : 'opacity-0'}`}
+        <div 
+          className={`my-12 transition-opacity duration-1000 ease-in-out ${missionVisible ? 'opacity-100' : 'opacity-0'}`}
         >
-          <h3 className="text-2xl font-bold mb-6 flex items-center">
-            <Users className="mr-2 h-6 w-6" />
-            Our Team
-          </h3>
-          <div className="grid gap-6 md:grid-cols-3">
-            {[
-              { name: "Bhavesh Garud", role: "Founder & CEO", avatar: "/placeholder.svg?height=100&width=100" },
-              { name: "Kunal Chhablani", role: "Head of Recruitment", avatar: "/placeholder.svg?height=100&width=100" },
-              { name: "Hiten Gerella", role: "Lead Resume Writer", avatar: "/placeholder.svg?height=100&width=100" },
-            ].map((member) => (
-              <Card key={member.name}>
-                <CardContent className="flex flex-col items-center pt-6">
-                  <Avatar className="h-20 w-20 mb-4">
-                    <AvatarImage src={member.avatar} alt={member.name} />
-                    <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                  </Avatar>
-                  <h4 className="font-semibold">{member.name}</h4>
-                  <p className="text-sm text-muted-foreground">{member.role}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div> */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center">
+                <Mail className="mr-2 h-6 w-6" />
+                Questions about our services?
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Reach out to us directly at: <a href="mailto:careerassist.in@gmail.com" className="text-blue-500 hover:underline">careerassist.in@gmail.com</a></p>
+            </CardContent>
+          </Card>
+        </div>
 
-        {/* <div 
-          ref={testimonialsRef}
-          className={`my-12 transition-opacity duration-1000 ease-in-out ${testimonialsVisible ? 'opacity-100' : 'opacity-0'}`}
-        >
-          <h3 className="text-2xl font-bold mb-6 flex items-center">
-            <Star className="mr-2 h-6 w-6" />
-            What Our Clients Say
-          </h3>
-          <div className="grid gap-6 md:grid-cols-2">
-            {[
-              { name: "Emily W.", text: "OnetoMany helped me land my dream job at a top tech company. Their personalized approach made all the difference!" },
-              { name: "Michael T.", text: "I was skeptical at first, but the results speak for themselves. OnetoMany saved me countless hours and opened doors I didn't even know existed." },
-            ].map((testimonial, index) => (
-              <Card key={index}>
-                <CardContent className="pt-6">
-                  <p className="italic mb-4">"{testimonial.text}"</p>
-                  <p className="font-semibold">- {testimonial.name}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div> */}
+        {/* Commented out team and testimonials sections */}
       </div>
     </section>
   )
