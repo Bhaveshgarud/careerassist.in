@@ -109,7 +109,7 @@ function About() {
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
                   <span>Starter</span>
-                  <span className="text-2xl font-bold">₹4k</span>
+                  <span className="text-2xl font-bold">₹3k</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
