@@ -49,7 +49,7 @@ const timelineSteps = [
     title: "Job Application",
     description: "We apply to companies on your behalf.",
     details:
-      "We target companies that match your profile and also allow for applications to specific companies of your choice. Our team ensures each application is optimized for the specific role and company.",
+      "We will apply to the companies that you shortlist or provide. You have full control over which companies we apply to, ensuring that your applications align with your career goals. We handle the entire process of applying, so you can focus on preparing for interviews.",
   },
   {
     title: "Tracking and Updates",
@@ -128,11 +128,11 @@ function Home() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="Contact">
-                <Button className="flex items-center justify-center">
-                  <Briefcase className="mr-2 h-4 w-4" />
-                  Start Your Journey
-                </Button>
+                <Link to="Contact">
+                  <Button className="flex items-center justify-center">
+                    <Briefcase className="mr-2 h-4 w-4" />
+                    Start Your Journey
+                  </Button>
                 </Link>
               </div>
             </div>
