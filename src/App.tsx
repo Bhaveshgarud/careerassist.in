@@ -11,6 +11,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
+import TermsOfService from "./components/TermsOfService";
 import { Button } from "./components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./components/ui/sheet";
 import { Menu, X } from "lucide-react";
@@ -31,9 +32,7 @@ export default function Component() {
       <div className="flex flex-col min-h-screen">
         <header className="px-4 lg:px-6 h-14 flex items-center">
           <Link to="/" className="flex items-center justify-center">
-            {/* <BriefcaseIcon className="h-6 w-6" /> */}
             <img src="/images/new_logo.png" height={145} width={145} alt="" />
-            
             <span className="sr-only">Job Application Service</span>
           </Link>
           <nav className="ml-auto hidden md:flex gap-4 sm:gap-6">
@@ -80,17 +79,18 @@ export default function Component() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
         <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
           <p className="text-xs text-muted-foreground">
-            © 2024 CareerAssist. All rights reserved.
+            © 2024 careerassist. All rights reserved.
           </p>
           <nav className="sm:ml-auto flex gap-4 sm:gap-6">
             <Link
               className="text-xs hover-text-blue hover:underline underline-offset-4"
-              to="#"
+              to="/terms-of-service"
             >
               Terms of Service
             </Link>
