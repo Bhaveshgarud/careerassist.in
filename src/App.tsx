@@ -96,9 +96,9 @@ export default function Component() {
             </Link>
             <Link
               className="text-xs hover-text-blue hover:underline underline-offset-4"
-              to="#"
+              to="/privacy-policy"
             >
-              Privacy
+              Privacy Policy
             </Link>
           </nav>
         </footer>
