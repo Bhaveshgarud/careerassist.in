@@ -14,7 +14,7 @@ function About() {
   const [testimonialsRef, testimonialsVisible] = useScrollAnimation()
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="w-full py-12 md:py-24 lg:py-3">
       <div className="container px-4 md:px-6">
         <div 
           ref={headerRef}
