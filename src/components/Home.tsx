@@ -37,7 +37,7 @@ const timelineSteps = [
     title: "Initial Consultation",
     description: "We start by understanding your needs and requirements.",
     details:
-      "You'll complete a comprehensive questionnaire that helps us tailor our service to your specific career goals and preferences.",
+      "You'll complete a comprehensive questionnaire that helps us in filling out the applications.",
   },
   {
     title: "Custom Resume and Cover Letter",
