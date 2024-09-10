@@ -160,7 +160,7 @@ function About() {
             </CardHeader>
             <CardContent className="flex items-center space-x-4">
               <Avatar className="h-20 w-20">
-                <AvatarImage src="v3/public/images/bhavesh-garud.jpg" alt="Bhavesh Garud" />
+                <AvatarImage src="/images/bhavesh-garud.jpg" alt="Bhavesh Garud" />
                 <AvatarFallback>BG</AvatarFallback>
               </Avatar>
               <div>
