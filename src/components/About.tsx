@@ -17,7 +17,7 @@ function About() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-3">
 
-      
+
       <div 
         ref={founderRef}
         className={`my-12 transition-opacity duration-1000 ease-in-out ${founderVisible ? 'opacity-100' : 'opacity-0'}`}
@@ -190,7 +190,7 @@ function About() {
             </CardHeader>
             <CardContent className="flex items-center space-x-4">
               <Avatar className="h-20 w-20 overflow-hidden">
-                <AvatarImage src="/images/bhavesh-garud.jpg" alt="Bhavesh Garud" />
+                <AvatarImage src="/images/bhavesh-garud.jpg" alt="Bhavesh Garud" className="object-cover"/>
                 <AvatarFallback>BG</AvatarFallback>
               </Avatar>
               <div>
