@@ -16,36 +16,6 @@ function About() {
 
   return (
     <section className="w-full py-12 md:py-24 lg:py-3">
-
-
-      <div 
-        ref={founderRef}
-        className={`my-12 transition-opacity duration-1000 ease-in-out ${founderVisible ? 'opacity-100' : 'opacity-0'}`}
-      >
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center">
-              <Users className="mr-2 h-6 w-6" />
-              Founder
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="flex items-center space-x-4">
-            <div className="relative h-20 w-20 overflow-hidden rounded-full">
-              <img
-                src="/images/bhavesh-garud.jpg"
-                alt="Bhavesh Garud"
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover"
-              />
-            </div>
-            <div>
-              <h4 className="text-xl font-semibold">Bhavesh Garud</h4>
-              <p className="text-muted-foreground">Founder of CareerAssist</p>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
-
       <div className="container px-4 md:px-6">
         <div 
           ref={headerRef}
@@ -178,28 +148,32 @@ function About() {
         </div>
 
         <div 
-          ref={founderRef}
-          className={`my-12 transition-opacity duration-1000 ease-in-out ${founderVisible ? 'opacity-100' : 'opacity-0'}`}
-        >
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center">
-                <Users className="mr-2 h-6 w-6" />
-                Founder
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="flex items-center space-x-4">
-              <Avatar className="h-20 w-20 overflow-hidden">
-                <AvatarImage src="/images/bhavesh-garud.jpg" alt="Bhavesh Garud" className="object-cover"/>
-                <AvatarFallback>BG</AvatarFallback>
-              </Avatar>
-              <div>
-                <h4 className="text-xl font-semibold">Bhavesh Garud</h4>
-                <p className="text-muted-foreground">Founder of CareerAssist</p>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+        ref={founderRef}
+        className={`my-12 transition-opacity duration-1000 ease-in-out ${founderVisible ? 'opacity-100' : 'opacity-0'}`}
+      >
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center">
+              <Users className="mr-2 h-6 w-6" />
+              Founder
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="flex items-center space-x-4">
+            <div className="relative h-20 w-20 overflow-hidden rounded-full">
+              <img
+                src="/images/bhavesh-garud.jpg"
+                alt="Bhavesh Garud"
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <h4 className="text-xl font-semibold">Bhavesh Garud</h4>
+              <p className="text-muted-foreground">Founder of CareerAssist</p>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
 
         <div 
           className={`my-12 transition-opacity duration-1000 ease-in-out ${missionVisible ? 'opacity-100' : 'opacity-0'}`}
