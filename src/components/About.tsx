@@ -10,6 +10,7 @@ function About() {
   const [featuresRef, featuresVisible] = useScrollAnimation()
   const [servicesRef, servicesVisible] = useScrollAnimation()
   const [missionRef, missionVisible] = useScrollAnimation()
+  const [founderRef, founderVisible] = useScrollAnimation()
   const [teamRef, teamVisible] = useScrollAnimation()
   const [testimonialsRef, testimonialsVisible] = useScrollAnimation()
 
@@ -75,7 +76,8 @@ function About() {
           ref={servicesRef}
           className={`my-12 transition-opacity duration-1000 ease-in-out ${servicesVisible ? 'opacity-100' : 'opacity-0'}`}
         >
-          <h3 className="text-2xl font-bold mb-6 text-center">Our Services</h3>
+          <h3 className="text-2xl font-bold mb-2 text-center">Our Services</h3>
+          <p className="text-center text-muted-foreground mb-6">Choose the plan that best fits your career goals and let us handle the rest.</p>
           <div className="grid gap-6 md:grid-cols-2">
             <Card>
               <CardHeader>
@@ -141,6 +143,30 @@ function About() {
             </CardHeader>
             <CardContent>
               <p>At CareerAssist, our mission is to revolutionize the job search process for students, recent graduates, and professionals seeking a career change. We believe that everyone deserves a fair shot at their dream job, and we're here to level the playing field. By handling the time-consuming task of applying to multiple companies, we allow you to focus on what truly matters: preparing for interviews and showcasing your unique talents.</p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div 
+          ref={founderRef}
+          className={`my-12 transition-opacity duration-1000 ease-in-out ${founderVisible ? 'opacity-100' : 'opacity-0'}`}
+        >
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center">
+                <Users className="mr-2 h-6 w-6" />
+                Founder
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="flex items-center space-x-4">
+              <Avatar className="h-20 w-20">
+                <AvatarImage src="public/images/bhavesh-garud.jpg" alt="Bhavesh Garud" />
+                <AvatarFallback>BG</AvatarFallback>
+              </Avatar>
+              <div>
+                <h4 className="text-xl font-semibold">Bhavesh Garud</h4>
+                <p className="text-muted-foreground">Founder of CareerAssist</p>
+              </div>
             </CardContent>
           </Card>
         </div>
