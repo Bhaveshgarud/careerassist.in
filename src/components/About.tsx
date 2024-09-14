@@ -102,7 +102,7 @@ function About() {
                   </li>
                   <li className="flex items-center">
                     <CheckCircleIcon className="h-5 w-5 text-green-500 mr-2" />
-                    AutoApply job: 100 Applications
+                    AutoApply job: 200 Applications
                   </li>
                 </ul>
               </CardContent>
@@ -122,7 +122,7 @@ function About() {
                   </li>
                   <li className="flex items-center">
                     <CheckCircleIcon className="h-5 w-5 text-green-500 mr-2" />
-                    AutoApply job: 50 Applications
+                    AutoApply job: 100 Applications
                   </li>
                 </ul>
               </CardContent>
