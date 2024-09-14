@@ -98,7 +98,7 @@ function About() {
                   </li>
                   <li className="flex items-center">
                     <CheckCircleIcon className="h-5 w-5 text-green-500 mr-2" />
-                    Interview prep material
+                    Interview prep: Mock Interviews
                   </li>
                   <li className="flex items-center">
                     <CheckCircleIcon className="h-5 w-5 text-green-500 mr-2" />
