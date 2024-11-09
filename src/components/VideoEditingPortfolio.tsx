@@ -26,7 +26,7 @@ const VideoEditingPortfolio = () => {
     {
       title: "Music Video",
       description: "Vibrant music video for an up-and-coming artist",
-      videoUrl: "https://www.youtube.com/watch?v=UtzDqzfZQLQ&ab_channel=RukmaniGurukul",
+      videoUrl: "https://youtu.be/UtzDqzfZQLQ?si=4SE0kLV409H1JfkQ",
       tags: ["Visual Effects", "Editing"]
     }
   ]
