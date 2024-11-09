@@ -24,13 +24,13 @@ const VideoEditingPortfolio = () => {
       tags: ["Storytelling", "Color Correction"],
     },
     {
-      title: "Product Launch",
-      description: "Dynamic product reveal for a new smartphone",
+      title: "MMA Edit Video",
+      description: "Edited a MMA video for a client, used transitions and effects, Added a motivational music backkground",
       videoUrl: "https://www.youtube.com/embed/AKOqS6DgK7A?si=YDA14GuD97FcQQD1",
       tags: ["3D Animation", "Sound Design"],
     },
     {
-      title: "Music Video",
+      title: "Gurukul Intro Video",
       description:
         "Introductory video for a gurukul. I used AI Image Generation Tools for Images, edited the Voice Over, added a beautiful music as a background",
       videoUrl: "https://www.youtube.com/embed/UtzDqzfZQLQ?si=BV7qfPbVNnoGJfyS",
