@@ -27,7 +27,7 @@ const VideoEditingPortfolio = () => {
       title: "MMA Edit Video",
       description: "Edited a MMA video for a client, used transitions and effects, Added a motivational music backkground",
       videoUrl: "https://www.youtube.com/embed/AKOqS6DgK7A?si=YDA14GuD97FcQQD1",
-      tags: ["3D Animation", "Sound Design"],
+      tags: ["", "Sound Design"],
     },
     {
       title: "Gurukul Intro Video",
@@ -54,7 +54,7 @@ const VideoEditingPortfolio = () => {
               <CardTitle>{item.title}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
             </CardHeader>
-            <CardContent>
+            {/* <CardContent>
               <div className="aspect-video mb-4">
                 <iframe
                   width="100%"
@@ -84,7 +84,7 @@ const VideoEditingPortfolio = () => {
                   <ExternalLink className="mr-2 h-4 w-4" /> Project Details
                 </Button>
               </div>
-            </CardContent>
+            </CardContent> */}
           </Card>
         ))}
       </div>
