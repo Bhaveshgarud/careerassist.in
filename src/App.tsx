@@ -15,7 +15,6 @@ export default function Component() {
 
   return (
     <Router>
-      <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         {/* ... header code ... */}
         <main className="flex-1">
