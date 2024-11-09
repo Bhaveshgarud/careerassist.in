@@ -1,7 +1,13 @@
-import React from 'react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "src/components/ui/card"
-import { Button } from "src/components/ui/button"
-import { Play, ExternalLink } from 'lucide-react'
+import React from "react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "src/components/ui/card";
+import { Button } from "src/components/ui/button";
+import { Play, ExternalLink } from "lucide-react";
 
 const VideoEditingPortfolio = () => {
   const portfolioItems = [
@@ -9,31 +15,34 @@ const VideoEditingPortfolio = () => {
       title: "Corporate Promo Video",
       description: "A sleek promotional video for a tech startup",
       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      tags: ["Motion Graphics", "Color Grading"]
+      tags: ["Motion Graphics", "Color Grading"],
     },
     {
       title: "Wedding Highlights",
       description: "Emotional highlights from a beautiful wedding ceremony",
       videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      tags: ["Storytelling", "Color Correction"]
+      tags: ["Storytelling", "Color Correction"],
     },
     {
       title: "Product Launch",
       description: "Dynamic product reveal for a new smartphone",
       videoUrl: "https://www.youtube.com/embed/AKOqS6DgK7A?si=YDA14GuD97FcQQD1",
-      tags: ["3D Animation", "Sound Design"]
+      tags: ["3D Animation", "Sound Design"],
     },
     {
       title: "Music Video",
-      description: "Vibrant music video for an up-and-coming artist",
+      description:
+        "Introductory video for a gurukul. I used AI Image Generation Tools for Images, edited the Voice Over, added a beautiful music as a background",
       videoUrl: "https://www.youtube.com/embed/UtzDqzfZQLQ?si=BV7qfPbVNnoGJfyS",
-      tags: ["Visual Effects", "Editing"]
-    }
-  ]
+      tags: ["Visual Effects", "Editing"],
+    },
+  ];
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-8 text-center">Video Editing Portfolio</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center">
+        Video Editing Portfolio
+      </h1>
       <p className="text-xl text-center mb-12 text-muted-foreground">
         Showcasing my passion for storytelling through video editing
       </p>
@@ -59,7 +68,10 @@ const VideoEditingPortfolio = () => {
               </div>
               <div className="flex flex-wrap gap-2 mb-4">
                 {item.tags.map((tag, tagIndex) => (
-                  <span key={tagIndex} className="bg-primary text-primary-foreground text-sm px-2 py-1 rounded">
+                  <span
+                    key={tagIndex}
+                    className="bg-primary text-primary-foreground text-sm px-2 py-1 rounded"
+                  >
                     {tag}
                   </span>
                 ))}
@@ -78,14 +90,16 @@ const VideoEditingPortfolio = () => {
       </div>
 
       <div className="mt-16 text-center">
-        <h2 className="text-3xl font-bold mb-4">Ready to bring your vision to life?</h2>
-        <p className="text-xl mb-8 text-muted-foreground">Let's collaborate on your next video project</p>
-        <Button size="lg">
-          Get in Touch
-        </Button>
+        <h2 className="text-3xl font-bold mb-4">
+          Ready to bring your vision to life?
+        </h2>
+        <p className="text-xl mb-8 text-muted-foreground">
+          Let's collaborate on your next video project
+        </p>
+        <Button size="lg">Get in Touch</Button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default VideoEditingPortfolio
+export default VideoEditingPortfolio;
