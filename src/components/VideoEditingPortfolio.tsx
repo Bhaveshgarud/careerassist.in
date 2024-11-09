@@ -20,7 +20,7 @@ const VideoEditingPortfolio = () => {
     {
       title: "Product Launch",
       description: "Dynamic product reveal for a new smartphone",
-      videoUrl: "https://www.youtube.com/embed/UtzDqzfZQLQ?si=BV7qfPbVNnoGJfyS",
+      videoUrl: "https://www.youtube.com/embed/AKOqS6DgK7A?si=YDA14GuD97FcQQD1",
       tags: ["3D Animation", "Sound Design"]
     },
     {
