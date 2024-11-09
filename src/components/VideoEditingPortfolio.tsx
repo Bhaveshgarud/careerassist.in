@@ -54,7 +54,7 @@ const VideoEditingPortfolio = () => {
               <CardTitle>{item.title}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
             </CardHeader>
-            {/* <CardContent>
+            <CardContent>
               <div className="aspect-video mb-4">
                 <iframe
                   width="100%"
@@ -76,15 +76,15 @@ const VideoEditingPortfolio = () => {
                   </span>
                 ))}
               </div>
-              <div className="flex justify-between">
+              {/* <div className="flex justify-between">
                 <Button variant="outline" size="sm">
                   <Play className="mr-2 h-4 w-4" /> Watch Full Video
                 </Button>
                 <Button variant="outline" size="sm">
                   <ExternalLink className="mr-2 h-4 w-4" /> Project Details
                 </Button>
-              </div>
-            </CardContent> */}
+              </div> */}
+            </CardContent>
           </Card>
         ))}
       </div>
