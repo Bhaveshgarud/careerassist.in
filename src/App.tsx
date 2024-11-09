@@ -13,6 +13,7 @@ import Contact from "./components/Contact";
 import Blog from "./components/Blog";
 import TermsOfService from "./components/TermsOfService";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import VideoEditingPortfolio from "./components/VideoEditingPortfolio";
 import { Button } from "./components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./components/ui/sheet";
 import { Menu, X } from "lucide-react";
@@ -24,6 +25,7 @@ export default function Component() {
   const menuItems = [
     { to: "/", label: "Home" },
     { to: "/about", label: "Services" },
+    { to: "/video-editing", label: "Video Editing" },
     { to: "/contact", label: "Contact Us" },
     { to: "/blog", label: "Blog" },
   ];
@@ -82,6 +84,7 @@ export default function Component() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/video-editing" element={<VideoEditingPortfolio />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
