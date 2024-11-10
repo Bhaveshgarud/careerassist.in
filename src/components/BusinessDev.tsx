@@ -8,6 +8,7 @@ import {
 } from "src/components/ui/card";
 import { Button } from "src/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "src/components/ui/avatar";
+import { Link } from "react-router-dom";
 import { BadgeCheck, Briefcase, Users, TrendingUp, Target, UserCheck, MessageSquare } from "lucide-react";
 
 const BusinessDevelopmentPortfolio = () => {
@@ -162,7 +163,9 @@ const BusinessDevelopmentPortfolio = () => {
         <p className="text-xl mb-8 text-muted-foreground">
           Let's discuss how I can help drive your business growth
         </p>
-        <Button size="lg">Get in Touch</Button>
+        <Link to="/contact">
+          <Button size="lg">Get in Touch</Button>
+        </Link>
       </div>
     </div>
   );
