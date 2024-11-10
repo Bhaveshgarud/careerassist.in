@@ -8,26 +8,32 @@ import {
 } from "src/components/ui/card";
 import { Button } from "src/components/ui/button";
 import { Play, ExternalLink } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "src/components/ui/avatar";
+import { Link } from "react-router-dom";
 
 const VideoEditingPortfolio = () => {
   const portfolioItems = [
     {
-      title: "Corporate Promo Video",
-      description: "A sleek promotional video for a tech startup",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      tags: ["Motion Graphics", "Color Grading"],
+      title: "Documentary Practice Video",
+      description:
+        "In this Video, I Practiced my Video Editing Skills, showcasing different cuts ",
+      videoUrl:
+        "https://player.vimeo.com/video/1028111464?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      tags: ["Storytelling", "Sound Editing"],
     },
     {
-      title: "Wedding Highlights",
-      description: "Emotional highlights from a beautiful wedding ceremony",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      tags: ["Storytelling", "Color Correction"],
+      title: "ASMR Highlights",
+      description: "Practiced video editing skills on ASMR videos",
+      videoUrl:
+        "https://player.vimeo.com/video/1028116372?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      tags: ["Sleek Cuts", "Color Correction"],
     },
     {
       title: "MMA Edit Video",
-      description: "Edited a MMA video for a client, used transitions and effects, Added a motivational music backkground",
+      description:
+        "Edited a MMA video for a client, used transitions and effects, Added a motivational music background",
       videoUrl: "https://www.youtube.com/embed/AKOqS6DgK7A?si=YDA14GuD97FcQQD1",
-      tags: ["", "Sound Design"],
+      tags: ["Transitions", "Sound Design"],
     },
     {
       title: "Gurukul Intro Video",
@@ -43,9 +49,17 @@ const VideoEditingPortfolio = () => {
       <h1 className="text-4xl font-bold mb-8 text-center">
         Video Editing Portfolio
       </h1>
-      <p className="text-xl text-center mb-12 text-muted-foreground">
-        Showcasing my passion for storytelling through video editing
-      </p>
+
+      <div className="flex flex-col items-center mb-12">
+        <Avatar className="w-32 h-29 mb-4">
+          <AvatarImage src="/images/PhotoCopy.jpg" alt="Bhavesh Garud" />
+          <AvatarFallback>YN</AvatarFallback>
+        </Avatar>
+        <h2 className="text-2xl font-semibold mb-2">Bhavesh Garud</h2>
+        <p className="text-xl text-center text-muted-foreground">
+          Showcasing my passion for storytelling through video editing
+        </p>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {portfolioItems.map((item, index) => (
@@ -76,14 +90,6 @@ const VideoEditingPortfolio = () => {
                   </span>
                 ))}
               </div>
-              {/* <div className="flex justify-between">
-                <Button variant="outline" size="sm">
-                  <Play className="mr-2 h-4 w-4" /> Watch Full Video
-                </Button>
-                <Button variant="outline" size="sm">
-                  <ExternalLink className="mr-2 h-4 w-4" /> Project Details
-                </Button>
-              </div> */}
             </CardContent>
           </Card>
         ))}
@@ -96,7 +102,9 @@ const VideoEditingPortfolio = () => {
         <p className="text-xl mb-8 text-muted-foreground">
           Let's collaborate on your next video project
         </p>
-        <Button size="lg">Get in Touch</Button>
+        <Link to="/contact">
+          <Button size="lg">Get in Touch</Button>
+        </Link>
       </div>
     </div>
   );
