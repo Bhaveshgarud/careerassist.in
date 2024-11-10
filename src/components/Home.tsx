@@ -101,7 +101,7 @@ function Home() {
             </span>
           </div>
           <Link
-            to="/About"
+            to="/OneToMany  "
             className="text-sm font-medium flex items-center hover:underline"
           >
             Learn more
@@ -167,7 +167,7 @@ function Home() {
               <Link to="/contact">
                 <Button>Get Started</Button>
               </Link>
-              <Link to="/about">
+              <Link to="/OneToMany">
                 <Button variant="outline">Learn More</Button>
               </Link>
             </div>
