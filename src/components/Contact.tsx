@@ -50,8 +50,7 @@ function Contact() {
               <p className="mb-4">When reaching out, please include:</p>
               <ul className="list-disc list-inside text-left space-y-2">
                 <li>Your name and contact information</li>
-                <li>The service you're interested in (Ultimate or Starter)</li>
-                <li>Your current job search status</li>
+                <li>The service you're interested in </li>
                 <li>Any specific questions you have</li>
               </ul>
               <p className="mt-4">

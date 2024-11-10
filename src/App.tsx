@@ -2,12 +2,16 @@ import { BrowserRouter as Router, Route, Routes, Link, Navigate } from "react-ro
 import React, { useState } from "react";
 import "./globals.css";
 import Home from "./components/Home";
-import About from "./components/About";
+import Services from "./components/About";
+import OneToMany from "./components/OneToMany";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
 import TermsOfService from "./components/TermsOfService";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import VideoEditingPortfolio from "./components/VideoEditingPortfolio";
+import BusinessDevelopmentPortfolio from "./components/BusinessDev";
+import ProductManagerPortfolio from "./components/ProductManagerPortfolio";
+import FrontendPortfolio from "./components/FrontendPortfolio";
 import { Button } from "./components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./components/ui/sheet";
 import { Menu, ChevronDown } from "lucide-react";
@@ -18,12 +22,16 @@ export default function Component() {
   const menuItems = [
     { to: "/", label: "Home" },
     {
-      to: "/about",
-      label: "Services",
+      to: "/services",
+      label: "PortFolios",
       subItems: [
         { to: "/video-editing", label: "Video Editing" },
+        { to: "/business-development", label: "Business Development" },
+        { to: "/product-management", label: "Product Management" },
+        { to: "/frontend-development", label: "Frontend Development" },
       ],
     },
+    { to: "/onetomany", label: "OneToMany" },
     { to: "/contact", label: "Contact Us" },
     { to: "/blog", label: "Blog" },
   ];
@@ -34,7 +42,7 @@ export default function Component() {
         <header className="px-4 lg:px-6 h-14 flex items-center">
           <Link to="/" className="flex items-center justify-center">
             <img src="/images/new_logo.png" height={145} width={145} alt="" />
-            <span className="sr-only">Job Application Service</span>
+            <span className="sr-only">CareerAssist</span>
           </Link>
           <nav className="ml-auto hidden md:flex gap-4 sm:gap-6">
             {menuItems.map((item) => (
@@ -110,12 +118,16 @@ export default function Component() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/onetomany" element={<OneToMany />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/video-editing" element={<VideoEditingPortfolio />} />
+            <Route path="/business-development" element={<BusinessDevelopmentPortfolio />} />
+            <Route path="/product-management" element={<ProductManagerPortfolio />} />
+            <Route path="/frontend-development" element={<FrontendPortfolio />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
