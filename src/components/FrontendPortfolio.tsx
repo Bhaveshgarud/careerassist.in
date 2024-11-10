@@ -16,7 +16,7 @@ export default function FrontendPortfolio() {
     {
       title: "CareerAssist",
       description:
-        "A full-featured job application management platform built with React.js",
+        "A full-featured website built with React.js",
       technologies: ["React.js", "Tailwind CSS", "Node.js"],
       features: [
         "Responsive design",
