@@ -13,7 +13,7 @@ import BusinessDevelopmentPortfolio from "./components/BusinessDev";
 import ProductManagerPortfolio from "./components/ProductManagerPortfolio";
 import FrontendPortfolio from "./components/FrontendPortfolio";
 import { Button } from "./components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "./components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./components/ui/sheet";
 import { Menu, ChevronDown } from "lucide-react";
 
 export default function Component() {
@@ -36,15 +36,19 @@ export default function Component() {
     { to: "/blog", label: "Blog" },
   ];
 
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
-        <header className="px-4 lg:px-6 h-14 flex items-center">
-          <Link to="/" className="flex items-center justify-center">
+        <header className="px-2 lg:px-4 h-14 flex items-center">
+          <Link to="/" className="flex items-center mr-auto">
             <img src="/images/new_logo.png" height={145} width={145} alt="" />
             <span className="sr-only">CareerAssist</span>
           </Link>
-          <nav className="ml-auto hidden md:flex gap-4 sm:gap-6">
+          <nav className="hidden md:flex gap-4 sm:gap-6">
             {menuItems.map((item) => (
               <div key={item.to} className="relative group">
                 <Link
@@ -73,12 +77,12 @@ export default function Component() {
               </div>
             ))}
           </nav>
-          <Sheet>
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button
                 variant="outline"
                 size="icon"
-                className="ml-auto md:hidden"
+                className="md:hidden"
               >
                 <Menu className="h-6 w-6 hover:text-blue-600" />
                 <span className="sr-only">Toggle menu</span>
@@ -88,24 +92,27 @@ export default function Component() {
               <nav className="flex flex-col gap-4">
                 {menuItems.map((item) => (
                   <React.Fragment key={item.to}>
-                    <Link
-                      to={item.to}
-                      className="text-sm font-medium hover:text-blue-600 hover:underline underline-offset-4"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
+                    <SheetClose asChild>
+                      <Link
+                        to={item.to}
+                        className="text-sm font-medium hover:text-blue-600 hover:underline underline-offset-4"
+                        onClick={handleLinkClick}
+                      >
+                        {item.label}
+                      </Link>
+                    </SheetClose>
                     {item.subItems && (
                       <div className="pl-4">
                         {item.subItems.map((subItem) => (
-                          <Link
-                            key={subItem.to}
-                            to={subItem.to}
-                            className="block text-sm font-medium hover:text-blue-600 hover:underline underline-offset-4 py-2"
-                            onClick={() => setIsOpen(false)}
-                          >
-                            {subItem.label}
-                          </Link>
+                          <SheetClose asChild key={subItem.to}>
+                            <Link
+                              to={subItem.to}
+                              className="block text-sm font-medium hover:text-blue-600 hover:underline underline-offset-4 py-2"
+                              onClick={handleLinkClick}
+                            >
+                              {subItem.label}
+                            </Link>
+                          </SheetClose>
                         ))}
                       </div>
                     )}
