@@ -9,45 +9,40 @@ import {
 import { Button } from "src/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "src/components/ui/avatar";
 import { Link } from "react-router-dom";
-import { 
-  Code,
-  Globe,
-  Github,
-  Layout,
-  Cpu,
-  Database
-} from "lucide-react";
+import { Code, Globe, Github, Layout, Cpu, Database } from "lucide-react";
 
 export default function FrontendPortfolio() {
   const projects = [
     {
       title: "CareerAssist",
-      description: "A full-featured job application management platform built with React.js",
+      description:
+        "A full-featured job application management platform built with React.js",
       technologies: ["React.js", "Tailwind CSS", "Node.js"],
       features: [
         "Responsive design",
         "User authentication",
         "Job application tracking",
-        "Interactive dashboard"
+        "Interactive dashboard",
       ],
       link: "https://careerassist.in",
-      github: "#",
-      image: "/images/CA.png"
+      github: "https://github.com/Bhaveshgarud/careerassist.in",
+      image: "/images/CA.png",
     },
     {
       title: "Apple iPhone Website Clone",
-      description: "A visually stunning clone of the Apple iPhone website showcasing modern web development practices",
+      description:
+        "A visually stunning clone of the Apple iPhone website showcasing modern web development practices",
       technologies: ["React.js", "Three.js", "GSAP"],
       features: [
         "3D animations",
         "Smooth scrolling effects",
         "Responsive layout",
-        "Performance optimized"
+        "Performance optimized",
       ],
-      link: "#",
-      github: "#",
-      image: "/images/clone.png"
-    }
+      link: "https://jsm-phone.com/",
+      github: "https://github.com/Bhaveshgarud/Apple-iPhone-website",
+      image: "/images/clone.png",
+    },
   ];
 
   const skills = {
@@ -57,21 +52,15 @@ export default function FrontendPortfolio() {
       "CSS3",
       "JavaScript",
       "Tailwind CSS",
-      "Three.js"
+      "Three.js",
     ],
-    tools: [
-      "Git",
-      "GitHub",
-      "VS Code",
-      "Figma",
-      "Chrome DevTools"
-    ],
+    tools: ["Git", "GitHub", "VS Code", "Figma", "Chrome DevTools"],
     concepts: [
       "Responsive Design",
       "Performance Optimization",
       "Web Accessibility",
-      "SEO Best Practices"
-    ]
+      "SEO Best Practices",
+    ],
   };
 
   return (
@@ -79,7 +68,7 @@ export default function FrontendPortfolio() {
       <h1 className="text-4xl font-bold mb-8 text-center">
         Frontend Engineering Portfolio
       </h1>
-      
+
       <div className="flex flex-col items-center mb-12">
         <Avatar className="w-32 h-32 mb-4">
           <AvatarImage src="/images/bhavesh-garud.jpg" alt="Bhavesh Garud" />
@@ -87,7 +76,7 @@ export default function FrontendPortfolio() {
         </Avatar>
         <h2 className="text-2xl font-semibold mb-2">Bhavesh Garud</h2>
         <p className="text-xl text-center text-muted-foreground max-w-2xl">
-          Frontend Engineer specializing in building responsive, performant, and 
+          Frontend Engineer specializing in building responsive, performant, and
           user-friendly web applications using modern technologies.
         </p>
       </div>
@@ -111,7 +100,7 @@ export default function FrontendPortfolio() {
                 ))}
               </div>
               <div className="mb-4">
-                <img 
+                <img
                   src={project.image}
                   alt={`${project.title} screenshot`}
                   className="w-full h-auto object-cover rounded-lg"
@@ -127,12 +116,20 @@ export default function FrontendPortfolio() {
               </ul>
               <div className="flex gap-4">
                 <Button variant="outline" size="sm" asChild>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Globe className="mr-2 h-4 w-4" /> Live Demo
                   </a>
                 </Button>
                 <Button variant="outline" size="sm" asChild>
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Github className="mr-2 h-4 w-4" /> Source Code
                   </a>
                 </Button>
@@ -208,7 +205,9 @@ export default function FrontendPortfolio() {
       </div>
 
       <div className="text-center">
-        <h2 className="text-3xl font-bold mb-4">Interested in Working Together?</h2>
+        <h2 className="text-3xl font-bold mb-4">
+          Interested in Working Together?
+        </h2>
         <p className="text-xl mb-8 text-muted-foreground">
           I'm always open to discussing new projects and opportunities
         </p>
