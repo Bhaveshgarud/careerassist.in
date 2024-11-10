@@ -15,6 +15,7 @@ import FrontendPortfolio from "./components/FrontendPortfolio";
 import { Button } from "./components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./components/ui/sheet";
 import { Menu, ChevronDown } from "lucide-react";
+import ScrollToTop from './components/ScrollToTop'; 
 
 export default function Component() {
   const [isOpen, setIsOpen] = useState(false);
@@ -123,6 +124,7 @@ export default function Component() {
           </Sheet>
         </header>
         <main className="flex-1">
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
