@@ -159,7 +159,7 @@ function OneToMany() {
           <CardContent className="flex items-center space-x-4">
             <div className="relative h-20 w-20 overflow-hidden rounded-full">
               <img
-                src="/images/bhavesh-garud.jpg"
+                src="/images/PhotoCopy.jpg"
                 alt="Bhavesh Garud"
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover"
               />
