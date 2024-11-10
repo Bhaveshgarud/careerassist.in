@@ -20,9 +20,9 @@ export default function FrontendPortfolio() {
       technologies: ["React.js", "Tailwind CSS", "Node.js"],
       features: [
         "Responsive design",
-        "User authentication",
-        "Job application tracking",
-        "Interactive dashboard",
+        "Card Components",
+        "Scroll animations",
+        "Modern design",
       ],
       link: "https://careerassist.in",
       github: "https://github.com/Bhaveshgarud/careerassist.in",
