@@ -42,8 +42,8 @@ export default function Portfolio() {
       <Avatar className="w-32 h-32 mb-4">
           <AvatarImage src="/images/PhotoCopy.jpg" alt="Bhavesh Garud" />
           <AvatarFallback>BG</AvatarFallback>
-        </Avatar>
-        <h2 className="text-3xl font-bold mb-6">Bhavesh Garud</h2>
+          <h2 className="text-3xl font-bold mb-6">Bhavesh Garud</h2>
+      </Avatar>       
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-2xl font-semibold mb-4">Profile</h3>
