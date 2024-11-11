@@ -44,10 +44,10 @@ export default function Portfolio() {
             </Avatar>
             <h2 className="text-3xl font-bold mb-2">Bhavesh Garud</h2>
             <div className="flex gap-4 mb-4">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+              <a href="https://github.com/Bhaveshgarud" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
                 <Github className="w-6 h-6" />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+              <a href="https://linkedin.com/in/bhavesh-garud-759038238" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
                 <Linkedin className="w-6 h-6" />
               </a>
               <a href="mailto:bhaveshgarud18@gmail.com" className="text-gray-600 hover:text-gray-900">
