@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "src/components/ui/card";
 import { Button } from "src/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "src/components/ui/avatar";
 import { Video, Briefcase, Layout, Code, GraduationCap, Cpu, Book } from 'lucide-react';
 
 export default function Portfolio() {
-  const portfolios = [
+  const portfolios = [  
     {
       title: "Video Editing",
       description: "Showcasing my skills in video editing, including transitions, effects, and storytelling.",
@@ -34,10 +35,14 @@ export default function Portfolio() {
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-8 text-center">My Services & Portfolio</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center">Portfolio</h1>
       
       {/* Resume Section */}
       <div className="mb-16 p-8 bg-gray-100 rounded-lg shadow-md">
+      <Avatar className="w-32 h-32 mb-4">
+          <AvatarImage src="/images/PhotoCopy.jpg" alt="Bhavesh Garud" />
+          <AvatarFallback>BG</AvatarFallback>
+        </Avatar>
         <h2 className="text-3xl font-bold mb-6">Bhavesh Garud</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
