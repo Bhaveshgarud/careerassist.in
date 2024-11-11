@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "src/components/ui/card";
+import { Button } from "src/components/ui/button";
 import { Video, Briefcase, Layout, Code, GraduationCap, Cpu, Book } from 'lucide-react';
 
 export default function Portfolio() {
