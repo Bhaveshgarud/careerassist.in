@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes, Link, Navigate } from "react-ro
 import React, { useState } from "react";
 import "./globals.css";
 import Home from "./components/Home";
-import Services from "./components/About";
+import Services from "./components/Portfolio";
 import OneToMany from "./components/OneToMany";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
