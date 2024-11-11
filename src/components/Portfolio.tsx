@@ -58,7 +58,7 @@ export default function Portfolio() {
           <div className="flex-1">
             <h3 className="text-2xl font-semibold mb-4">Profile</h3>
             <p className="text-gray-700 mb-4">
-              As a multifaceted professional, I bring expertise in business development, product management, frontend development, and video editing. My passion lies in identifying market opportunities, developing innovative solutions, and driving growth across various domains. With a strong entrepreneurial mindset and client-focused approach, I excel in creating user-centric products and fostering strong business relationships.
+              My passion lies in identifying market opportunities, developing innovative solutions, and driving growth across various domains. With a strong entrepreneurial mindset and client-focused approach, I excel in creating user-centric products and fostering strong business relationships. Always eager to learn and adapt, I am driven by a hunger to expand my skills and add value wherever I can.
             </p>
             
             <h3 className="text-2xl font-semibold mb-4">Education</h3>
