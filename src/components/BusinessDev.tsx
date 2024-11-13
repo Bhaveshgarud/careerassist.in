@@ -10,6 +10,7 @@ import { Button } from "src/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "src/components/ui/avatar";
 import { Link } from "react-router-dom";
 import { BadgeCheck, Briefcase, Users, TrendingUp, Target, UserCheck, MessageSquare } from "lucide-react";
+import { Video, Layout, Code, GraduationCap, Cpu, Book, Github, Linkedin, Mail } from 'lucide-react';
 
 const BusinessDevelopmentPortfolio = () => {
   const achievements = [
@@ -63,7 +64,18 @@ const BusinessDevelopmentPortfolio = () => {
           <AvatarImage src="/images/PhotoCopy2.jpg" alt="Bhavesh Garud" />
           <AvatarFallback>BG</AvatarFallback>
         </Avatar>
-        <h2 className="text-2xl font-semibold mb-2">Bhavesh Garud</h2>
+            <h2 className="text-3xl font-bold mb-2">Bhavesh Garud</h2>
+            <div className="flex gap-4 mb-4">
+              <a href="https://github.com/Bhaveshgarud" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+                <Github className="w-6 h-6" />
+              </a>
+              <a href="https://linkedin.com/in/bhavesh-garud-759038238" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+                <Linkedin className="w-6 h-6" />
+              </a>
+              <a href="mailto:bhaveshgarud18@gmail.com" className="text-gray-600 hover:text-gray-900">
+                <Mail className="w-6 h-6" />
+              </a>
+            </div>
         <p className="text-xl text-center text-muted-foreground max-w-2xl">
           Passionate business developer with expertise in identifying market opportunities, 
           client acquisition, and strategic planning to drive business growth.

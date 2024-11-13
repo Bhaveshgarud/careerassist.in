@@ -9,6 +9,7 @@ import {
 import { Button } from "src/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "src/components/ui/avatar";
 import { Link } from "react-router-dom";
+import { Video, Briefcase, Code, GraduationCap, Cpu, Book, Github, Linkedin, Mail } from 'lucide-react';
 import { 
   Layout, 
   Users, 
@@ -88,7 +89,18 @@ const ProductManagerPortfolio = () => {
           <AvatarImage src="/images/PhotoCopy2.jpg" alt="Bhavesh Garud" />
           <AvatarFallback>BG</AvatarFallback>
         </Avatar>
-        <h2 className="text-2xl font-semibold mb-2">Bhavesh Garud</h2>
+        <h2 className="text-3xl font-bold mb-2">Bhavesh Garud</h2>
+            <div className="flex gap-4 mb-4">
+              <a href="https://github.com/Bhaveshgarud" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+                <Github className="w-6 h-6" />
+              </a>
+              <a href="https://linkedin.com/in/bhavesh-garud-759038238" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+                <Linkedin className="w-6 h-6" />
+              </a>
+              <a href="mailto:bhaveshgarud18@gmail.com" className="text-gray-600 hover:text-gray-900">
+                <Mail className="w-6 h-6" />
+              </a>
+            </div>
         <p className="text-xl text-center text-muted-foreground max-w-2xl">
           Product Manager with a passion for building user-centric solutions and 
           driving product success through data-driven decision making.
