@@ -70,7 +70,7 @@ export default function FrontendPortfolio() {
       </h1>
 
       <div className="flex flex-col items-center mb-12">
-        <Avatar className="w-20 h-25 mb-4">
+        <Avatar className="w-32 h-32 mb-4">
           <AvatarImage src="/images/PhotoCopy2.jpg" alt="Bhavesh Garud" />
           <AvatarFallback>BG</AvatarFallback>
         </Avatar>
