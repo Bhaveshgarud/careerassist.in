@@ -52,7 +52,7 @@ const VideoEditingPortfolio = () => {
 
       <div className="flex flex-col items-center mb-12">
         <Avatar className="w-32 h-29 mb-4">
-          <AvatarImage src="/images/PhotoCopy.jpg" alt="Bhavesh Garud" />
+          <AvatarImage src="/images/PhotoCopy2.jpg" alt="Bhavesh Garud" />
           <AvatarFallback>YN</AvatarFallback>
         </Avatar>
         <h2 className="text-2xl font-semibold mb-2">Bhavesh Garud</h2>

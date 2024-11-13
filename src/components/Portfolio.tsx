@@ -39,7 +39,7 @@ export default function Portfolio() {
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           <div className="flex flex-col items-center">
             <Avatar className="w-48 h-48 mb-4">
-              <AvatarImage src="/images/PhotoCopy.jpg" alt="Bhavesh Garud" />
+              <AvatarImage src="/images/PhotoCopy2.jpg" alt="Bhavesh Garud" />
               <AvatarFallback>BG</AvatarFallback>
             </Avatar>
             <h2 className="text-3xl font-bold mb-2">Bhavesh Garud</h2>
