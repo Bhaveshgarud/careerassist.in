@@ -123,7 +123,6 @@ const BusinessDevelopmentPortfolio = () => {
                 />
               </div>
             </div>
-            <p className="mt-4 text-muted-foreground">Client expressing interest and confirming participation in our services, demonstrating trust in our solutions.</p>
           </CardContent>
         </Card>
 
@@ -146,7 +145,6 @@ const BusinessDevelopmentPortfolio = () => {
                 />
               </div>
             </div>
-            <p className="mt-4 text-muted-foreground">Real conversation with a client showing successful interview outcomes and satisfaction with our services.</p>
           </CardContent>
         </Card>
       </div>
