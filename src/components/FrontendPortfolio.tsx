@@ -66,7 +66,7 @@ export default function FrontendPortfolio() {
   return (
     <div className="container mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold mb-8 text-center">
-        Frontend Engineering Portfolio
+        Frontend Portfolio
       </h1>
 
       <div className="flex flex-col items-center mb-12">

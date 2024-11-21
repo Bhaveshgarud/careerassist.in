@@ -14,7 +14,7 @@ import ProductManagerPortfolio from "./components/ProductManagerPortfolio";
 import FrontendPortfolio from "./components/FrontendPortfolio";
 import { Button } from "./components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./components/ui/sheet";
-import { Menu, ChevronDown } from "lucide-react";
+import { Menu, ChevronDown } from 'lucide-react';
 import ScrollToTop from './components/ScrollToTop'; 
 
 export default function Component() {
@@ -26,10 +26,9 @@ export default function Component() {
       to: "/services",
       label: "PortFolios",
       subItems: [
-        { to: "/video-editing", label: "Video Editing" },
+        { to: "/frontend-development", label: "Web Development" },
         { to: "/business-development", label: "Business Development" },
-        { to: "/product-management", label: "Product Management" },
-        { to: "/frontend-development", label: "Frontend Development" },
+        { to: "/video-editing", label: "Video Editing" },
       ],
     },
     { to: "/onetomany", label: "OneToMany" },
@@ -44,7 +43,7 @@ export default function Component() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
-        <header className="px-2 lg:px-4 h-14 flex items-center">
+        <header className="fixed top-0 left-0 right-0 bg-white z-50 px-2 lg:px-4 h-14 flex items-center shadow-md">
           <Link to="/" className="flex items-center mr-auto">
             <img src="/images/new_logo.png" height={145} width={145} alt="" />
             <span className="sr-only">CareerAssist</span>
@@ -89,7 +88,7 @@ export default function Component() {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent className="w-[300px] sm:w-[400px]">
               <nav className="flex flex-col gap-4">
                 {menuItems.map((item) => (
                   <React.Fragment key={item.to}>
@@ -123,7 +122,7 @@ export default function Component() {
             </SheetContent>
           </Sheet>
         </header>
-        <main className="flex-1">
+        <main className="flex-1 mt-14">
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -135,7 +134,6 @@ export default function Component() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/video-editing" element={<VideoEditingPortfolio />} />
             <Route path="/business-development" element={<BusinessDevelopmentPortfolio />} />
-            <Route path="/product-management" element={<ProductManagerPortfolio />} />
             <Route path="/frontend-development" element={<FrontendPortfolio />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

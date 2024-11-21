@@ -8,10 +8,10 @@ import { Video, Briefcase, Layout, Code, GraduationCap, Cpu, Book, Github, Linke
 export default function Portfolio() {
   const portfolios = [
     {
-      title: "Video Editing",
-      description: "Showcasing my skills in video editing, including transitions, effects, and storytelling.",
-      icon: <Video className="w-6 h-6" />,
-      link: "/video-editing"
+      title: "Web Development",
+      description: "Showcasing my skills in creating responsive and interactive web applications.",
+      icon: <Code className="w-6 h-6" />,
+      link: "/frontend-development"
     },
     {
       title: "Business Development",
@@ -20,16 +20,10 @@ export default function Portfolio() {
       link: "/business-development"
     },
     {
-      title: "Product Management",
-      description: "Demonstrating my ability to lead product development and drive user-centric solutions.",
-      icon: <Layout className="w-6 h-6" />,
-      link: "/product-management"
-    },
-    {
-      title: "Frontend Development",
-      description: "Showcasing my skills in creating responsive and interactive web applications.",
-      icon: <Code className="w-6 h-6" />,
-      link: "/frontend-development"
+      title: "Video Editing",
+      description: "Showcasing my skills in video editing, including transitions, effects, and storytelling.",
+      icon: <Video className="w-6 h-6" />,
+      link: "/video-editing"
     }
   ];
 
@@ -84,8 +78,7 @@ export default function Portfolio() {
             <h3 className="text-2xl font-semibold mb-4">Skills</h3>
             <ul className="list-disc list-inside text-gray-700 grid grid-cols-2 gap-2">
               <li>Business Development</li>
-              <li>Product Management</li>
-              <li>Frontend Development</li>
+              <li>Web Development</li>
               <li>Video Editing</li>
               <li>Client Relationship</li>
               <li>Market Research</li>
@@ -138,7 +131,6 @@ export default function Portfolio() {
         <ul className="list-disc list-inside text-gray-700 mb-4">
           <li><strong>Video Editing:</strong> Crafting compelling visual narratives with advanced editing techniques, transitions, and effects.</li>
           <li><strong>Business Development:</strong> Identifying market opportunities, developing strategic plans, and fostering client relationships to drive business growth.</li>
-          <li><strong>Product Management:</strong> Leading product development initiatives with a focus on user-centric solutions and market fit.</li>
           <li><strong>Frontend Development:</strong> Building responsive and interactive web applications using modern technologies like React.js.</li>
         </ul>
         <p className="text-gray-700">
