@@ -131,7 +131,6 @@ export default function Component() {
             <Route path="/services" element={<Services />} />
             <Route path="/onetomany" element={<OneToMany />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/blog" element={<Blog />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/video-editing" element={<VideoEditingPortfolio />} />
