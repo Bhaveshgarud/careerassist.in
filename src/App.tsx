@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import Services from "./components/Portfolio";
 import OneToMany from "./components/OneToMany";
 import Contact from "./components/Contact";
-import Blog from "./components/Blog";
+import AssistMe from "./components/AssistMe";
 import TermsOfService from "./components/TermsOfService";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import VideoEditingPortfolio from "./components/VideoEditingPortfolio";
@@ -22,6 +22,7 @@ export default function Component() {
 
   const menuItems = [
     { to: "/", label: "Home" },
+    { to: "/assistme", label: "AssistMe" },
     {
       to: "/services",
       label: "PortFolios",
@@ -126,6 +127,7 @@ export default function Component() {
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/assistme" element={<AssistMe />} />
             <Route path="/services" element={<Services />} />
             <Route path="/onetomany" element={<OneToMany />} />
             <Route path="/contact" element={<Contact />} />
