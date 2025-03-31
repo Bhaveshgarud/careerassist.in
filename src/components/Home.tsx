@@ -83,7 +83,7 @@ export default function Home() {
       >
         <div className="flex-1">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Introducing <span className="text-primary">AssistMe</span>: Your Personal Digital Guide
+            Introducing <span className="text-primary">AssistMe</span>: Your Personal Assistant
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
             Get one-on-one assistance with AI tools, studying, tech support, and more. 
@@ -92,9 +92,6 @@ export default function Home() {
           <div className="flex flex-wrap gap-4">
             <Button size="lg" asChild>
               <Link to="/assistme">Learn More</Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <Link to="/onetomany">Explore OneToMany</Link>
             </Button>
           </div>
         </div>
@@ -246,23 +243,6 @@ export default function Home() {
               </div>
               <CardTitle>Phone</CardTitle>
             </CardHeader>
-            <CardContent>
-              <a href="tel:+917972968137" className="text-primary hover:underline">
-                +91 7972968137
-              </a>
-            </CardContent>
-          </Card>
-          <Card className="text-center">
-            <CardHeader>
-              <div className="mx-auto p-3 bg-primary/10 rounded-full mb-4">
-                <MapPin className="h-6 w-6 text-primary" />
-              </div>
-              <CardTitle>Location</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>Ulhasnagar, Maharashtra</p>
-              <p>India</p>
-            </CardContent>
           </Card>
         </div>
       </motion.div>
@@ -281,10 +261,7 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button size="lg" asChild>
-            <Link to="/assistme">Try AssistMe</Link>
-          </Button>
-          <Button size="lg" variant="outline" asChild>
-            <Link to="/onetomany">Explore OneToMany</Link>
+            <Link to="/assistme">Explore AssistMe</Link>
           </Button>
         </div>
       </motion.div>
