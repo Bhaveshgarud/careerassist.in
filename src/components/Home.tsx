@@ -214,38 +214,31 @@ export default function Home() {
       </motion.div>
 
       {/* Contact Section */}
-      <motion.div 
-        className="py-16 mb-20"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeIn}
-      >
-        <h2 className="text-3xl font-bold text-center mb-12">Get In Touch</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="text-center">
-            <CardHeader>
-              <div className="mx-auto p-3 bg-primary/10 rounded-full mb-4">
-                <Mail className="h-6 w-6 text-primary" />
-              </div>
-              <CardTitle>Email</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <a href="mailto:careerassist.in@gmail.com" className="text-primary hover:underline">
-                careerassist.in@gmail.com
-              </a>
-            </CardContent>
-          </Card>
-          <Card className="text-center">
-            <CardHeader>
-              <div className="mx-auto p-3 bg-primary/10 rounded-full mb-4">
-                <Phone className="h-6 w-6 text-primary" />
-              </div>
-              <CardTitle>Phone</CardTitle>
-            </CardHeader>
-          </Card>
+<motion.div 
+  className="py-16 mb-20"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  variants={fadeIn}
+>
+  <h2 className="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+  <div className="flex justify-center"> {/* Centering the card */}
+    <Card className="text-center w-full max-w-sm"> {/* Set max width for proper sizing */}
+      <CardHeader>
+        <div className="mx-auto p-3 bg-primary/10 rounded-full mb-4">
+          <Mail className="h-6 w-6 text-primary" />
         </div>
-      </motion.div>
+        <CardTitle>Email</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <a href="mailto:careerassist.in@gmail.com" className="text-primary hover:underline">
+          careerassist.in@gmail.com
+        </a>
+      </CardContent>
+    </Card>
+  </div>
+</motion.div>
+
 
       {/* CTA Section */}
       <motion.div 
